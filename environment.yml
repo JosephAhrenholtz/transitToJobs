@@ -1,0 +1,15 @@
+name: geo_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - geopandas
+  - pandas
+  - r5py
+  - pygris
+  - contextily
+  - rasterio
+  - folium
+  - matplotlib
+  - numpy
+  - scipy
