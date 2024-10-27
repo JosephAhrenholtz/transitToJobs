@@ -32,16 +32,16 @@ Calculates accessibility to jobs in the San Francisco Bay Area. It utilizes the 
 ### Prerequisites
 
 - Python 3.8 or higher
-- Conda (recommended for managing dependencies)
+- Conda
 
 ### Installation
-
-#### Using Conda
 
 1. **Clone the repository:**
 
     ```sh
     git clone https://github.com/JosephAhrenholtz/transitToJobs.git
+    ```
+    ```sh
     cd transitToJobs
     ```
 
@@ -49,32 +49,12 @@ Calculates accessibility to jobs in the San Francisco Bay Area. It utilizes the 
 
     ```sh
     conda env create -f environment.yml
-    conda activate geo_env
+    ```
+    ```sh
+    conda activate transitToJobs_env
     ```
 3. Download the data/ directory from [Drive](https://drive.google.com/drive/folders/1vxKAKVUCX81S7EbYdIgxNtEnthTRESAm) and extract into root directory 
 
-#### Using pip
-
-1. **Clone the repository:**
-
-    ```sh
-    git clone https://github.com/JosephAhrenholtz/transitToJobs.git
-    cd transitToJobs
-    ```
-
-2. **Create and activate a virtual environment:**
-
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install the required packages:**
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. Download the data/ directory from [Drive](https://drive.google.com/drive/folders/1vxKAKVUCX81S7EbYdIgxNtEnthTRESAm) and extract into root directory
 
 ## Usage
 
@@ -132,7 +112,7 @@ python utils/prep_census.py
 ### Processed Data
 - **`fips`**: FIPS code for the Census tract.
 - **`w_avg_tot_jobs_30`**: The average number of jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of workers living in the origin tract.
-- **`w_avg_constr_jobs_30`**: The average number of construction sector1 jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of construction sector workers living in the origin tract.
+- **`w_avg_constr_jobs_30`**: The average number of construction sector jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of construction sector workers living in the origin tract.
 - **`w_avg_manuf_jobs_30`**: The average number of manufacturing sector jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of manufacturing sector workers living in the origin tract.
 - **`w_avg_serv_jobs_30`**: The average number of accommodation and food service sector jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of accommodation and food service sector workers living in the origin tract.
 - **`w_avg_tech_jobs_30`**: The average number of professional, scientific, and technical service sector jobs accessible by public transit and walking within 30 minutes during a typical AM commute, weighted by the number of professional, scientific, and technical workers living in the origin tract.

@@ -1,10 +1,1 @@
-geopandas
-pandas
-r5py
 pygris
-contextily
-rasterio
-folium
-matplotlib
-numpy
-scipy

@@ -1,4 +1,4 @@
-name: geo_env
+name: transitToJobs_env
 channels:
   - conda-forge
 dependencies:
@@ -6,10 +6,11 @@ dependencies:
   - geopandas
   - pandas
   - r5py
-  - pygris
   - contextily
   - rasterio
   - folium
   - matplotlib
   - numpy
   - scipy
+  - pip:
+    - -r file:requirements.txt
