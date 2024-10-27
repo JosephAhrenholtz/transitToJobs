@@ -97,7 +97,7 @@ python utils/prep_census.py
     - `save_cumulative_access(bgj_access)`
 
 - **`weight_access.py`**
-  - **Description:** Loads workers data from LODES residence area characteristics file and merges with job accessibility measures at the block group level.  Then calculates the average accessible jobs within each Census tract, weighted by workers living in the origin of the commute.  The weighted average approach is used to emphasize accessibility for workers from their place of residence.
+  - **Description:** Loads workers data from LODES residence area characteristics file and merges with job accessibility measures at the block group level.  Then calculates the average accessible jobs from each Census tract, weighted by workers living in the origin of the commute.  The weighted average approach is used to emphasize accessibility for workers from their place of residence.
   - **Functions:**
     - `load_workers_data()`
     - `merge_workers_with_accessibility(workers)`
