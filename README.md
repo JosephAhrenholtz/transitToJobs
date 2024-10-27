@@ -51,6 +51,7 @@ Calculates accessibility to jobs in the San Francisco Bay Area. It utilizes the 
     conda env create -f environment.yml
     conda activate geo_env
     ```
+3. Download the data/ directory from [Drive](https://drive.google.com/drive/folders/1vxKAKVUCX81S7EbYdIgxNtEnthTRESAm) and extract into root directory 
 
 #### Using pip
 
@@ -73,6 +74,7 @@ Calculates accessibility to jobs in the San Francisco Bay Area. It utilizes the 
     ```sh
     pip install -r requirements.txt
     ```
+4. Download the data/ directory from [Drive](https://drive.google.com/drive/folders/1vxKAKVUCX81S7EbYdIgxNtEnthTRESAm) and extract into root directory
 
 ## Usage
 
