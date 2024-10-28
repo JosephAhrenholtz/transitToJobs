@@ -103,7 +103,6 @@ python utils/prep_census.py
     - `merge_workers_with_accessibility(workers)`
     - `compute_weighted_averages(worker_access)`
     - `merge_with_tract_geometries(weighted_avgs)`
-    - `classify_weighted_averages(final_access)`
     - `save_final_access(final_access)`
 
 
